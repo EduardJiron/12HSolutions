@@ -1,5 +1,5 @@
 
-let isDeployed =localStorage.getItem('isScroll') === 'true';
+let isDeployed=true;
 
 
 function toggleMenu(){
@@ -8,7 +8,7 @@ function toggleMenu(){
     toggleButton.addEventListener('click', toogleDeployed)
     const menu = document.getElementById("menu-item")
 
-    onload()
+    
    
     function toogleDeployed(){
         isDeployed =!isDeployed
@@ -19,7 +19,7 @@ function toggleMenu(){
         else{
             deployedOff()
         }
-        localStorage.setItem('isScroll', isDeployed.toString());
+        
     }
 
     function deployedOn(){
@@ -36,12 +36,5 @@ function toggleMenu(){
         let isScroll = isDeployed ? "hidden" : "scroll"
         notScroll.style.overflowY= isScroll
     }
-    function onload(){
-        if(isDeployed){
-            deployedOn()
-        }
-        else{
-            deployedOff()
-        }
-    }
+   
 }
