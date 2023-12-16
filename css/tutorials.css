@@ -1,0 +1,16 @@
+.rowT{
+  margin-top: 6vw;
+}
+
+.itemPanel:hover{
+transform: scale(1.05);
+}
+
+@media (max-width: 700PX){
+  .rowT {
+    margin-top: 12vw;
+}
+.rowPanelscroll{
+  height: 104vw;
+}
+}
